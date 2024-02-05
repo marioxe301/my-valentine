@@ -7,7 +7,7 @@
 		{ message: 'Como que no quieres? ', image: '/amazed.gif' },
 		{ message: 'No aceptare un NO por respuesta', image: '/duck-knife.png' },
 		{ message: 'Lo siento, me altere, entonces no quieres?', image: '/calm.gif' },
-		{ message: 'Andale, no seas mala, acepta ser mi valentin', image: '/please.gif' }
+		{ message: 'Andale, no seas mala', image: '/please.gif' }
 	];
 	let rejectionIndex = 0;
 	let rejected = false;
@@ -42,7 +42,7 @@
 			<img
 				src="/love.gif"
 				alt="My Valentine"
-				style="width: 400px; height: 311px; object-fit: cover; "
+				style="width: 100%; height: 311px; object-fit: cover; "
 			/>
 			<p
 				style="color: #fff; font-size: 2rem; text-align: center; padding: 1rem; background: #000111; border-radius: 1rem;"
