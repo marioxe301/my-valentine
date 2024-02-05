@@ -9,7 +9,6 @@
 		src={rejection.image}
 		alt="Rejection"
 		style="width: 100%; height: 300px; object-fit: contain;"
-		loading="lazy"
 	/>
 	<p
 		style="color: #fff; font-size: 2rem; text-align: center; padding: 1rem; background: #000111; border-radius: 1rem;"

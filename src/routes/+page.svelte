@@ -35,7 +35,6 @@
 				src="/my-valentine.jpg"
 				alt="My Valentine"
 				style="width: 300px; height: 311px; object-fit: cover;"
-				loading="lazy"
 			/>
 			<p>&#8195</p>
 		{/if}
@@ -44,7 +43,6 @@
 				src="/love.gif"
 				alt="My Valentine"
 				style="width: auto; height: 300px; object-fit: cover; "
-				loading="lazy"
 			/>
 			<p
 				style="color: #fff; font-size: 2rem; text-align: center; padding: 1rem; background: #000111; border-radius: 1rem;"
