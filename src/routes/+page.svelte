@@ -2,7 +2,7 @@
 	import CtaButtons from '../components/cta-buttons.svelte';
 	import Rejection from '../components/rejection.svelte';
 
-	const rejections = [
+	const rejection = [
 		{ message: 'Estas segura, de que no quieres?', image: '/think.gif' },
 		{ message: 'Como que no quieres? ', image: '/amazed.gif' },
 		{ message: 'No aceptare un NO por respuesta', image: '/duck-knife.png' },
@@ -51,13 +51,13 @@
 			</p>
 		{/if}
 		{#if rejected && !accepted}
-			<Rejection {rejections} {rejectionIndex} />
+			<Rejection rejection={rejection[rejectionIndex]} />
 		{/if}
 
 		<CtaButtons
 			{handleAccept}
 			{handleRejection}
-			hideRejectedButton={rejectionIndex === rejections.length - 1 || accepted}
+			hideRejectedButton={rejectionIndex === rejection.length - 1 || accepted}
 			hideAcceptedButton={accepted}
 		/>
 	</div>
