@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { fade } from 'svelte/transition';
 	import CtaButtons from '../components/cta-buttons.svelte';
 	import Rejection from '../components/rejection.svelte';
 
@@ -39,19 +40,21 @@
 			<p>&#8195</p>
 		{/if}
 		{#if accepted}
-			<img
-				src="/love.gif"
-				alt="My Valentine"
-				style="width: auto; height: 300px; object-fit: cover; "
-			/>
-			<p
-				style="color: #fff; font-size: 2rem; text-align: center; padding: 1rem; background: #000111; border-radius: 1rem;"
-			>
-				SIUUUUU, sabria que dirias que si 😉
-			</p>
+			<div style="text-align: center;" in:fade={{ duration: 300 }}>
+				<img
+					src="/love.gif"
+					alt="My Valentine"
+					style="width: auto; height: 300px; object-fit: cover; "
+				/>
+				<p
+					style="color: #fff; font-size: 2rem; text-align: center; padding: 1rem; background: #000111; border-radius: 1rem;"
+				>
+					SIUUUUU, sabria que dirias que si 😉
+				</p>
+			</div>
 		{/if}
 		{#if rejected && !accepted}
-			<Rejection rejection={rejection[rejectionIndex]} />
+			<Rejection rejection={rejection[rejectionIndex]} index={rejectionIndex} />
 		{/if}
 
 		<CtaButtons
