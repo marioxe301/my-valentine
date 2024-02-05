@@ -9,7 +9,7 @@
 	{#if !hideAcceptedButton}
 		<button
 			on:click={handleAccept}
-			style="border: none; background: chartreuse; width: fit-content; ;min-width: 100px; height: 50px; border-radius: 3rem; padding-inline: 1rem; box-sizing: content-box;"
+			style="border: none; background: chartreuse; width: 100%; ;height: 50px; border-radius: 3rem; padding-inline: 1rem; box-sizing: content-box;"
 			><span
 				style="color: #000111; font-weight: bolder; font-size: 2rem; text-transform: uppercase;"
 				>Si quiero</span
@@ -18,7 +18,7 @@
 	{/if}
 	{#if !hideRejectedButton}
 		<button
-			style="border: none; background: crimson; width: fit-content; ;min-width: 100px; height: 50px; border-radius: 3rem; padding-inline: 1rem; box-sizing: content-box;"
+			style="border: none; background: crimson; width: 100%; ;height: 50px; border-radius: 3rem; padding-inline: 1rem; box-sizing: content-box;"
 			on:click={handleRejection}
 			><span style="color: #fff; font-weight: bolder; font-size: 2rem; text-transform: uppercase;"
 				>No quiero</span

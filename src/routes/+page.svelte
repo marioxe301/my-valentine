@@ -3,7 +3,7 @@
 	import Rejection from '../components/rejection.svelte';
 
 	const rejection = [
-		{ message: 'Estas segura, de que no quieres ser mi valentin?', image: '/think.gif' },
+		{ message: 'Estas segura, de que no quieres?', image: '/think.gif' },
 		{ message: 'Como que no quieres? ', image: '/amazed.gif' },
 		{ message: 'No aceptare un NO por respuesta', image: '/duck-knife.png' },
 		{ message: 'Lo siento, me altere, entonces no quieres?', image: '/calm.gif' },
@@ -42,7 +42,7 @@
 			<img
 				src="/love.gif"
 				alt="My Valentine"
-				style="width: 100%; height: 311px; object-fit: cover; "
+				style="width: auto; height: 300px; object-fit: cover; "
 			/>
 			<p
 				style="color: #fff; font-size: 2rem; text-align: center; padding: 1rem; background: #000111; border-radius: 1rem;"
